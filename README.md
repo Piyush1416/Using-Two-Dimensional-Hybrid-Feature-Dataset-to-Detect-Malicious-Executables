@@ -11,26 +11,25 @@ A optimum technique where we could easily detect malicious virus files by extrac
     - validation (20%)
 		- testing    (20%)
 
- ############################################ For Training ############################################
-2] Run hexdump and dll codes on malacious and non-malacious executables present in folder
+ ########### For Training ########
+4] Run hexdump and dll codes on malacious and non-malacious executables present in folder
 	.hex and dll files willbe extracted from each executable
 
-3] store extracted files in seperate folders 
+5] store extracted files in seperate folders 
 
-4] Now Run Hexdump algo again and this time store all hexdump in one file only named (AllHex.hex) 
+6] Now Run Hexdump algo again and this time store all hexdump in one file only named (AllHex.hex) 
 	
-5] Run Ngram pass all hexfiles and create ngram based on n selected to create n-gram(filename).txt 
+7] Run Ngram pass all hexfiles and create ngram based on n selected to create n-gram(filename).txt 
 
-6] Store them seperately in n-gram folder
+8] Store them seperately in n-gram folder
 
-7] pass AlHex.hex to Ngram and get ngram file for same n with frequencies
+9] pass AlHex.hex to Ngram and get ngram file for same n with frequencies
 
+10] add dll calls to top ALLHex file which will have 500 features + dll now so top500+.txt features
 
-8] add dll calls to top ALLHex file which will have 500 features + dll now so top500+.txt features
+11] Run FeatureSelection algo with input  ( top500+.txt + ngram file[malacious/non-malacious alternately] ) to create dataset file with extension ( .test)
 
-9] Run FeatureSelection algo with input  ( top500+.txt + ngram file[malacious/non-malacious alternately] ) to create dataset file with extension ( .test)
+12] svm-training and svm-predict  
 
-11] svm-training and svm-predict  
-
-12] For indepth understand of the working kindly refer the below Research paper
+13] For indepth understand of the working kindly refer the below Research paper
      http://www.ijircce.com/upload/2016/july/158_Using.pdf
