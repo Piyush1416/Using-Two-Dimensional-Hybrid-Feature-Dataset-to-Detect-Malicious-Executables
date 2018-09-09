@@ -11,7 +11,8 @@ A optimum technique where we could easily detect malicious virus files by extrac
     - validation (20%)
 		- testing    (20%)
 
- ########### For Training ########
+ ########### For Training ##########
+ 
 4] Run hexdump and dll codes on malacious and non-malacious executables present in folder
 	.hex and dll files willbe extracted from each executable
 
